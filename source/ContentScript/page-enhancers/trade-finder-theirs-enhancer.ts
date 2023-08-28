@@ -52,7 +52,7 @@ export default class TradeFinderTheirsEnhancer {
             .filter((row) => row !== null)
             .filter((row) => row!.trader !== null) as TradeFinderRow[];
 
-        rows.forEach((row) => row!.addWantsColumn());
+        rows.forEach((row) => row!.addOwnsColumn());
 
         this.addVisibilityToggle(page, rows);
     }
